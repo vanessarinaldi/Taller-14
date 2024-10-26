@@ -20,19 +20,13 @@
           <hr class="my-4">
           <div class="row g-3">
             <div class="col-sm-6">
-              <label for=validationCustom01 class="form-label">Nombre</label>
+              <label for="nombre" class="form-label">Nombre</label>
               <input type="text" class="form-control" id= "nombre" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
             </div>
 
             <div class="col-sm-6">
-              <label for= validationCustom02 class="form-label">Apellido</label>
+              <label for= "apellido" class="form-label">Apellido</label>
               <input type="text" class="form-control" id= "apellido" required>
-              <div class="valid-feedback">
-                Looks good!
-              </div>
             </div>
 
             <div class="col-12">
@@ -50,13 +44,14 @@
               <input type="password" class="form-control" id="password2" required>
             </div>
 
-            <div class="col-sm-12">
-              <button type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
+            <div class="form-check col-sm-12">
+              <button  type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
                 data-bs-target="#modalTerminos">Términos del servicio</button>
             </div>
+           
+    
 
-
-            <button class="btn btn-primary" type="submit">Registrarme</button>
+            <button class="btn btn-primary" type="submit" id="regBtn">Registrarme</button>
 
 
           </div>
@@ -71,6 +66,15 @@
       <p class="mb-1">Es un sitio generado con fines estrictamente educativos. No realiza registros ni guarda datos de
         ningún tipo.</p>
     </footer>
+  </div>
+  <div class="alert alert-success alert-dismissible fade" role="alert" id="alert-success">
+    <p>Datos guardados correctamente</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <div class="alert alert-danger alert-dismissible fade" role="alert" id="alert-danger">
+    <p>Los datos ingresados no cumplen con los requisitos solicitados</p>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
   <div class="modal fade" id="modalTerminos" tabindex="-1" aria-hidden="true">
