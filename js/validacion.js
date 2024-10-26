@@ -40,3 +40,4 @@ function Registro() {
 document.getElementById("regBtn").addEventListener('click', Registro);
 
 
+

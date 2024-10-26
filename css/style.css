@@ -1,3 +1,18 @@
 .container {
   max-width: 960px;
 }
+input:valid {
+  border-color: green !important;
+}
+
+.is-invalid {
+  border-color: red !important;
+}
+
+.invalid-feedback {
+  color: red;
+}
+
+.valid-feedback {
+  color: green;
+}
