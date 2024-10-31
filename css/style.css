@@ -18,8 +18,24 @@ input:valid {
 }
 .form-check-input:checked {
   border-color: green !important; 
-      background-color: green; 
-  }
-.form-check-label:valid {
-  color:green !important;
-  }
+  background-color: green !important; 
+}
+
+.form-check-input:not(:checked) {
+  border-color: red !important; 
+}
+
+.form-check-label {
+  color: initial; 
+}
+
+
+.form-check-input:checked ~ .form-check-label {
+  color: green !important; 
+}
+
+.form-check-input:not(:checked) ~ .form-check-label {
+  color: red !important; 
+}
+
+
