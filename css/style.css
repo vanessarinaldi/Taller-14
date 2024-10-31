@@ -25,16 +25,12 @@ input:valid {
   border-color: red !important; 
 }
 
-.form-check-input:checked ~.form-check-label {
-  color: initial !important; 
-}
-
 
 .form-check-input:checked ~ .form-check-label {
-  color: green !important; 
+  color: green; 
 }
 
-.form-check-input:not(:checked) ~ .form-check-label {
+.form-check-input:invalid ~ .form-check-label {
   color: red !important; 
 }
 
