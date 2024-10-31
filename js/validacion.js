@@ -44,7 +44,12 @@ document.getElementById('form').addEventListener('submit', function (event) {
   } else {
       password2.classList.remove('is-invalid');
   }
-
+  if (password2.value.length < 6) {
+    password2.classList.add('is-invalid');
+    isValid = false;
+} else {
+    password2.classList.remove('is-invalid');
+}
   
   if (!terminos.checked) {
       feedbackTerminos.style.display = 'block';
