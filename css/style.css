@@ -6,7 +6,7 @@ input:valid {
 }
 
 .is-invalid {
-  border-color: red !important;
+  border-color: red;
 }
 
 .invalid-feedback {
@@ -34,4 +34,6 @@ input:valid {
   color: red !important; 
 }
 
-
+.btn-link:invalid{
+  color: red !important;
+}
