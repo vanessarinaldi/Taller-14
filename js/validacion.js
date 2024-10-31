@@ -17,7 +17,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
     const email = document.getElementById('email');
     const password1 = document.getElementById('password1');
     const password2 = document.getElementById('password2');
-    const terminos = document.getElementById('modalTerminos');
+    const terminos = document.getElementById('terminos');
   
     //Validaciones
     [nombre, apellido, email, password1, password2].forEach(input => {
