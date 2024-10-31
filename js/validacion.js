@@ -1,7 +1,3 @@
-function showAlertSuccess() {
-  document.getElementById("alert-success").classList.add("show");
-}
-
 document.getElementById('form').addEventListener('submit', function (event) {
   event.preventDefault(); 
 
@@ -61,7 +57,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 
  
   if (isValid) {
-      showAlertSuccess();
+      alert ("Tu registro ha sido exitoso!");
   }
 });
 

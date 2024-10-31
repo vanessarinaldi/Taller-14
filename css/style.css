@@ -25,8 +25,8 @@ input:valid {
   border-color: red !important; 
 }
 
-.form-check-label {
-  color: initial; 
+.form-check-input:checked ~.form-check-label {
+  color: initial !important; 
 }
 
 
