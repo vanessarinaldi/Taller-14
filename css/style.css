@@ -16,3 +16,10 @@ input:valid {
 .valid-feedback {
   color: green;
 }
+.form-check-input:checked {
+  border-color: green !important; 
+      background-color: green; 
+  }
+.form-check-label:valid {
+  color:green !important;
+  }
