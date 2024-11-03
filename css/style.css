@@ -13,3 +13,21 @@
 .valid-feedback {
   color: green;
 }
+
+.btn-valid {
+  color: green;
+}
+
+.btn-invalid {
+  color: red;
+}
+
+/* Estilo para checkbox válido */
+.checkbox-valid {
+  color: green;
+}
+
+/* Estilo para checkbox inválido */
+.checkbox-invalid {
+  color: red;
+}
