@@ -3,7 +3,7 @@
 }
 
 .is-invalid {
-  border-color: red !important;
+  border-color: red;
 }
 
 .invalid-feedback {
