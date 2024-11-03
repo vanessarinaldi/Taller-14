@@ -1,9 +1,6 @@
 .container {
   max-width: 960px;
 }
-input:valid {
-  border-color: green !important;
-}
 
 .is-invalid {
   border-color: red;
@@ -16,24 +13,21 @@ input:valid {
 .valid-feedback {
   color: green;
 }
-.form-check-input:checked {
-  border-color: green !important; 
-  background-color: green !important; 
+
+.btn-valid {
+  color: green;
 }
 
-.form-check-input:not(:checked) {
-  border-color: red !important; 
+.btn-invalid {
+  color: red;
 }
 
-
-.form-check-input:checked ~ .form-check-label {
-  color: green; 
+/* Estilo para checkbox válido */
+.checkbox-valid {
+  color: green;
 }
 
-.form-check-input:invalid ~ .form-check-label {
-  color: red !important; 
-}
-
-.btn-link:invalid{
-  color: red !important;
+/* Estilo para checkbox inválido */
+.checkbox-invalid {
+  color: red;
 }

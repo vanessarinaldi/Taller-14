@@ -22,50 +22,46 @@
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="nombre" class="form-label">Nombre</label>
-              <input   type="text" class="form-control" id= "nombre" required>
-              <div class="invalid-feedback">Debe ingresar un nombre</div>
+              <input type="text" class="form-control" id= "nombre" required placeholder="Juan" minlength="2">
+              <div class="invalid-feedback">Debe ingresar un nombre.</div>
               <div class="valid-feedback">¡Perfecto!</div>
             </div>
 
             <div class="col-sm-6">
               <label for= "apellido" class="form-label">Apellido</label>
-              <input type="text" class="form-control" id= "apellido" required>
-              <div class="invalid-feedback">Debe ingresar un apellido</div>
+              <input type="text" class="form-control" id= "apellido" required placeholder="Perez" minlength="2">
+              <div class="invalid-feedback">Debe ingresar un apellido.</div>
               <div class="valid-feedback">¡Perfecto!</div>
             </div>
 
             <div class="col-12">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required>
-              <div class="invalid-feedback">Debe ingresar un email</div>
+              <input type="email" class="form-control" id="email" required placeholder="juanperez@correo.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+              <div class="invalid-feedback">Debe ingresar un email válido.</div>
               <div class="valid-feedback">¡Perfecto!</div>
             </div>
 
             <div class="col-sm-6">
               <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password1" required>
+              <input type="password" class="form-control" id="password1" minlength="6" required placeholder="Contraseña">
               <div class="invalid-feedback">Debe ingresar una contraseña con al menos 6 caracteres.</div>
               <div class="valid-feedback">¡Perfecto!</div>
             </div>
 
             <div class="col-sm-6">
               <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2" required>
-              <div class="invalid-feedback">Debe ser igual a "contraseña"</div>
+              <input type="password" class="form-control" id="password2" required placeholder="Repetir contraseña">
+              <div class="invalid-feedback">Debe ser igual a "contraseña".</div>
               <div class="valid-feedback">¡Perfecto!</div>
             </div>
 
             <div class="form-check col-sm-12">
-              <button  id="terminos" type="button" class="btn btn-link ps-0" data-bs-toggle="modal"
-                data-bs-target="#modalTerminos">Términos del servicio</button>
-                <div class="invalid-feedback" id="feedbackTerminos">Debe aceptar los términos del servicio</div>
-                <div class="valid-feedback">¡Perfecto!</div>
+              <button type="button" class="btn btn-link ps-0" data-bs-toggle="modal" data-bs-target="#modalTerminos" id="btnTerminos">
+                Términos del servicio
+              </button> <div class="invalid-feedback" id="feedbackTerminos">Debe aceptar los términos del servicio.</div>
             </div>
            
-    
-
             <button class="btn btn-primary" type="submit" id="regBtn">Registrarme</button>
-
 
           </div>
         </div>
@@ -95,8 +91,9 @@
         </div>
         <div class="modal-footer">
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="checkTerminos">
-            <label class="form-check-label" for="terminos">Acepto los términos y condiciones del servicio.</label>
+            <input type="checkbox" class="form-check-input" id="modalTerminosCheckbox">
+            <label class="form-check-label" for="modalTerminosCheckbox" id="labelTerminos">Acepto los términos y condiciones del servicio.</label>
+            <div class="invalid-feedback" id="feedbackModalTerminos">Debe aceptar los términos del servicio.</div>
           </div>
         </div>
       </div>
